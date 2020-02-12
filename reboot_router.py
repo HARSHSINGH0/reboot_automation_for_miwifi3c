@@ -3,7 +3,7 @@ from time import sleep
 driver=webdriver.Chrome()
 driver.get("http://192.168.31.1/cgi-bin/luci/web")
 password=driver.find_element_by_xpath('/html/body/div[1]/div[2]/div/form/div[1]/span/input')
-password.send_keys("12345678")
+password.send_keys("your admin password")
 nextbtn=driver.find_element_by_xpath("/html/body/div[1]/div[2]/div/form/div[2]/a")
 nextbtn.click()
 sleep(5)
